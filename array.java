@@ -178,19 +178,19 @@ class Solution {
 
 
 
-class Solution {
-    public int maxProfit(int[] prices) {
-       int maxprofit = 0 ;
-       int min = Integer.MAX_VALUE;
-       for(int i=0;i<prices.length;i++){
-        if(prices[i]<min){
-            min = prices[i];
-        }
-        else{
-            int profit = prices[i] - min;
-             maxprofit = Math.max(maxprofit, profit);
-        }
-       }
+// class Solution {
+//     public int maxProfit(int[] prices) {
+//        int maxprofit = 0 ;
+//        int min = Integer.MAX_VALUE;
+//        for(int i=0;i<prices.length;i++){
+//         if(prices[i]<min){
+//             min = prices[i];
+//         }
+//         else{
+//             int profit = prices[i] - min;
+//              maxprofit = Math.max(maxprofit, profit);
+//         }
+//        }
 
 
     //    2nd approach (but time limit exceed)
@@ -202,6 +202,71 @@ class Solution {
     //         }
     //     }
     // }
-       return maxprofit;
+//        return maxprofit;
+//     }
+// }
+
+
+// 283. Move Zeroes
+
+// Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
+// Note that you must do this in-place without making a copy of the array.
+
+ 
+
+// Example 1:
+
+// Input: nums = [0,1,0,3,12]
+// Output: [1,3,12,0,0]
+// Example 2:
+
+// Input: nums = [0]
+// Output: [0]
+ 
+
+// Constraints:
+
+// 1 <= nums.length <= 104
+// -231 <= nums[i] <= 231 - 1
+
+class Solution {
+    public void moveZeroes(int[] nums) {
+        // int nonzero = 0;
+        // for(int i=0;i<nums.length;i++){
+        //     if(nums[i] != 0){
+        //         nonzero++;
+        //     }
+        // }
+        // int index = 0;
+        // for(int i=0;i<nums.length;i++){
+        //     if(index<nonzero){
+        //         if(nums[i] != 0){
+        //             nums[index] = nums[i];
+        //             index++;
+        //         }
+        //     }
+        // }
+        // for(int i=nonzero;i<nums.length;i++){
+        //     nums[i] = 0;
+        // }
+
+        int nonzero = 0;
+        int count = 0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i] != 0){
+                nonzero++;
+            }
+        }
+
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]!=0){
+nums[count] =nums[i];
+count++;
+            }
+        }
+        for(int i=count;i<nums.length;i++){
+            nums[i] = 0;
+        }
     }
 }
