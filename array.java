@@ -333,13 +333,6 @@ if(currentsum<0){
 
 
 
-
-
-
-
-
-
-
 // int maxsum = Integer.MIN_VALUE;
 // for(int i=0;i<nums.length;i++){
 // int currentsum = nums[i];
@@ -357,5 +350,182 @@ if(currentsum<0){
 // }
 // }
 // return maxsum;
+//     }
+// }
+
+
+// 128. Longest Consecutive Sequence
+
+// Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
+
+// You must write an algorithm that runs in O(n) time.
+
+ 
+
+// Example 1:
+
+// Input: nums = [100,4,200,1,3,2]
+// Output: 4
+// Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+// Example 2:
+
+// Input: nums = [0,3,7,2,5,8,4,6,0,1]
+// Output: 9
+// Example 3:
+
+// Input: nums = [1,0,1,2]
+// Output: 3
+ 
+
+// Constraints:
+
+// 0 <= nums.length <= 105
+// -109 <= nums[i] <= 109
+
+
+import java.util.*;
+class Solution {
+    public int longestConsecutive(int[] nums) {
+        // if(nums.length==0){
+        //     return 0;
+        // }
+        // for(int i=0;i<nums.length-1;i++){
+        //  for(int j=0;j<nums.length-i-1;j++){
+        //     if(nums[j]>nums[j+1]){
+        //         int temp = nums[j];
+        //         nums[j] = nums[j+1];
+        //         nums[j+1] = temp;
+        //     }
+        //  }
+        // }
+        // int maxcount = 1;
+        // int count = 1 ;
+        // for(int i=1;i<nums.length;i++){
+        //     if(nums[i]==nums[i-1]){
+        //     }
+        //     else if(nums[i] == nums[i-1]+1 ){
+        //         count++;
+        //         if(count>maxcount){
+        //             maxcount = count;
+        //         }
+        //     }
+        //     else{
+        //         count = 1;
+        //     }
+        // }
+        // return maxcount;
+
+
+    // optimal approach
+        Set<Integer> set = new HashSet<>();
+        for(int num:nums){
+            set.add(num);
+        }
+        int maxLength = 0;
+
+        for(int num: set){
+            if(!set.contains(num-1)){
+                int currentNum = num;
+                int count = 1;
+
+                while(set.contains(currentNum+1)){
+                    currentNum++;
+                    count++;
+                }
+                maxLength = Math.max(maxLength,count);
+            }
+        }
+        return maxLength;
     }
 }
+
+
+// 238. Product of Array Except Self
+
+
+// Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
+
+// The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
+
+// You must write an algorithm that runs in O(n) time and without using the division operation.
+
+ 
+
+// Example 1:
+
+// Input: nums = [1,2,3,4]
+// Output: [24,12,8,6]
+// Example 2:
+
+// Input: nums = [-1,1,0,-3,3]
+// Output: [0,0,9,0,0]
+ 
+
+// Constraints:
+
+// 2 <= nums.length <= 105
+// -30 <= nums[i] <= 30
+// The input is generated such that answer[i] is guaranteed to fit in a 32-bit integer.
+
+
+class Solution {
+    public int[] productExceptSelf(int[] nums) {
+        int[] answer = new int[nums.length];
+        // for(int i=0;i<nums.length;i++){
+        //   answer[i] = 1;
+        //     int j=0;
+        //     while(j<nums.length ){
+        //         if(i!=j){
+        //         answer[i] = answer[i]*nums[j];
+        //         }
+        //         j++;
+        //     }
+            
+        // }
+        // return answer;
+
+        // int n = nums.length;
+        // int[] prefix = new int[nums.length];
+        // int[] suffix = new int[nums.length];
+
+        // // prefix 
+        // prefix[0] = 1;
+        // for(int i=1;i<n;i++){
+        //     prefix[i] = prefix[i-1]*nums[i-1];
+        // }
+
+        // suffix[n-1] = 1;
+        // for(int i=n-2;i>=0;i--){
+        //     suffix[i] = suffix[i+1]*nums[i+1];
+        // }
+
+        // for(int i=0;i<n;i++){
+        //     answer[i] = prefix[i]*suffix[i];
+        // }
+
+        // return answer;
+
+        int n = nums.length;
+        int prefix[] = new int [nums.length];
+        int suffix[] = new int [nums.length];
+
+
+        // for prefix 
+//         prefix[0] = 1;
+//         for(int i=1;i<n;i++){
+//            prefix[i] = prefix[i-1]*nums[i-1];
+//         }
+
+//         suffix[n-1] = 1;
+//         for(int i=n-2;i>=0;i--){
+//             suffix[i] = suffix[i+1]*nums[i+1]; 
+//         }
+
+//         for(int i=0;i<n;i++){
+//             answer[i] = prefix[i]*suffix[i];
+//         }
+//         return answer;
+
+
+//     }
+// }
