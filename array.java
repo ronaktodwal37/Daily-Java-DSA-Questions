@@ -304,9 +304,9 @@
 // Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
 
 
-class Solution {
-    public int maxSubArray(int[] nums) {
-   int maxsum = Integer.MIN_VALUE;
+// class Solution {
+//     public int maxSubArray(int[] nums) {
+//    int maxsum = Integer.MIN_VALUE;
 //    for(int i=0;i<nums.length;i++){
 //    int currentsum = 0;
 //     for(int j=i;j<nums.length;j++){
@@ -318,18 +318,18 @@ class Solution {
 //       }
 //       }
 //      }
-int currentsum = 0;
-for(int i =0;i<nums.length;i++){
-currentsum = currentsum + nums[i];
+// int currentsum = 0;
+// for(int i =0;i<nums.length;i++){
+// currentsum = currentsum + nums[i];
 
-if(currentsum>maxsum){
-    maxsum = currentsum;
-}
-if(currentsum<0){
-    currentsum = 0;
-}
-}
-     return maxsum;
+// if(currentsum>maxsum){
+//     maxsum = currentsum;
+// }
+// if(currentsum<0){
+//     currentsum = 0;
+// }
+// }
+//      return maxsum;
 
 
 
@@ -383,9 +383,9 @@ if(currentsum<0){
 // -109 <= nums[i] <= 109
 
 
-import java.util.*;
-class Solution {
-    public int longestConsecutive(int[] nums) {
+// import java.util.*;
+// class Solution {
+//     public int longestConsecutive(int[] nums) {
         // if(nums.length==0){
         //     return 0;
         // }
@@ -417,27 +417,27 @@ class Solution {
 
 
     // optimal approach
-        Set<Integer> set = new HashSet<>();
-        for(int num:nums){
-            set.add(num);
-        }
-        int maxLength = 0;
+        // Set<Integer> set = new HashSet<>();
+        // for(int num:nums){
+        //     set.add(num);
+        // }
+        // int maxLength = 0;
 
-        for(int num: set){
-            if(!set.contains(num-1)){
-                int currentNum = num;
-                int count = 1;
+        // for(int num: set){
+        //     if(!set.contains(num-1)){
+        //         int currentNum = num;
+        //         int count = 1;
 
-                while(set.contains(currentNum+1)){
-                    currentNum++;
-                    count++;
-                }
-                maxLength = Math.max(maxLength,count);
-            }
-        }
-        return maxLength;
-    }
-}
+        //         while(set.contains(currentNum+1)){
+        //             currentNum++;
+        //             count++;
+        //         }
+        //         maxLength = Math.max(maxLength,count);
+        //     }
+        // }
+        // return maxLength;
+    // }
+// }
 
 
 // 238. Product of Array Except Self
