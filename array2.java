@@ -532,5 +532,63 @@ public class array2 {
 //        return new ArrayList<>(uniqueTriplets);
 //     }
 // }
+
+
+// 54. Spiral Matrix
+// Given an m x n matrix, return all elements of the matrix in spiral order.
+
+// Example 1:
+// Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
+// Output: [1,2,3,6,9,8,7,4,5]
+// Example 2:
+
+// Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+// Output: [1,2,3,4,8,12,11,10,9,5,6,7]
+ 
+// Constraints:
+// m == matrix.length
+// n == matrix[i].length
+// 1 <= m, n <= 10
+// -100 <= matrix[i][j] <= 100
+
+
+// class Solution {
+//     public List<Integer> spiralOrder(int[][] matrix) {
+//         int m = matrix.length , n = matrix[0].length;
+//         int srow=0 , scol=0, erow=m-1 , ecol=n-1;
+//         List<Integer> ans = new ArrayList<>();
+
+//         while(srow<=erow && scol<=ecol){
+//             // top
+//             for(int j= scol;j<=ecol;j++){
+//                 ans.add(matrix[srow][j]);
+//             }
+
+//             // right
+//              for(int i= srow+1;i<=erow;i++){
+//                 ans.add(matrix[i][ecol]);
+//             }
+
+//             // bottom
+//              for(int j= ecol-1;j>=scol;j--){
+//                 if(srow==erow){
+//                     break;
+//                 }
+//                 ans.add(matrix[erow][j]);
+//             }
+
+//             // left
+//              for(int i= erow-1;i>=srow+1;i--){
+//                 if(scol==ecol){
+//                     break;
+//                 }
+//                 ans.add(matrix[i][scol]);
+//             }
+
+//             srow++;erow--;scol++;ecol--;
+//         }
+//     return ans;
+//     }
+// }
     }
 }
