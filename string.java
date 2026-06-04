@@ -82,5 +82,37 @@ public class string {
         return (int)(sign*ans);
     }
 }
+
+
+leetcode question 69
+class Solution {
+    public int mySqrt(int x) {
+        // int ans = 0;
+        // for(long i=0;i<=x;i++){
+        //     if(i*i == x){
+        //         ans = (int)i;
+        //     }
+        //     else if(x < (i*i) && x > ((i-1)*(i-1))){
+        //         ans = (int)i-1;
+        //     }
+        // }
+        // return ans ;
+
+
+        long low = 1 , high = x;
+        while(low<=high){
+            long mid = (low+high)/2;
+            long val = (mid*mid);
+
+            if(val<=x){
+                low = mid+1;
+            }
+            else{
+                high = mid-1;
+            }
+        }
+        return (int)high;
+    }
+}
     }
 }
