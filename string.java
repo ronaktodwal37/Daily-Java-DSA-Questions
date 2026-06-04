@@ -181,5 +181,25 @@ class Solution {
     return maxlength;
     }
 }
+
+// leetcode question 9
+class Solution {
+    public boolean isPalindrome(int x) {
+        int duplicate = x;
+        int reverse = 0;
+        while(x>0){
+            int rem = x%10;
+            reverse = reverse*10 + rem;
+            x = x/10;
+        }
+
+        if(reverse == duplicate){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+}
     }
 }
