@@ -153,5 +153,33 @@ class Solution {
         return s.substring(start, end + 1);
     }
 }
+
+
+
+// leetcode question 3 
+
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        int length = 0;
+        int maxlength = 0;
+
+        for(int i=0;i<s.length();i++){
+                    StringBuilder sb = new StringBuilder();
+            for(int j=i;j<s.length();j++){
+                if(sb.toString().indexOf(s.charAt(j)) == -1){
+                    sb.append(s.charAt(j));
+                    length  = sb.length();  
+                 if(length>maxlength){
+                    maxlength = length;
+                 }
+                }
+                else{
+                break;
+                }
+            }
+        }
+    return maxlength;
+    }
+}
     }
 }
