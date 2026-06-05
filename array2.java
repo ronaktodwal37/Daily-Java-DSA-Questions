@@ -593,23 +593,74 @@ public class array2 {
 
 // leetcode question 977
 
-class Solution {
-    public int[] sortedSquares(int[] nums) {
-        for(int i=0;i<nums.length;i++){
-            nums[i] = nums[i]*nums[i];
-        }
+// class Solution {
+//     public int[] sortedSquares(int[] nums) {
+//         for(int i=0;i<nums.length;i++){
+//             nums[i] = nums[i]*nums[i];
+//         }
 
-        for(int i=0;i<nums.length-1;i++){
-            for(int j=0;j<nums.length-i-1;j++){
-                if(nums[j]>nums[j+1]){
-                    int temp = nums[j];
-                    nums[j] = nums[j+1];
-                    nums[j+1] = temp;
-                }
-            }
-        }
-        return nums;
-    }
-}
+//         for(int i=0;i<nums.length-1;i++){
+//             for(int j=0;j<nums.length-i-1;j++){
+//                 if(nums[j]>nums[j+1]){
+//                     int temp = nums[j];
+//                     nums[j] = nums[j+1];
+//                     nums[j+1] = temp;
+//                 }
+//             }
+//         }
+//         return nums;
+//     }
+// }
+
+
+// leetcode question 34. Find First and Last Position of Element in Sorted Array
+
+// class Solution {
+//     public int[] searchRange(int[] nums, int target) {
+//         int count = 0;
+
+//         for(int i=0;i<nums.length;i++){
+//             if(nums[i]==target){
+//                 count++;
+//             }
+//         }
+    
+//     //  int arr[] = {-1,-1};
+//     List<Integer> ans  = new ArrayList<>();
+//         if(count==0){
+//         //    return arr;
+//         ans.add(-1);
+//         ans.add(-1);
+//         }
+//         else if(count==1){
+//             for(int i=0;i<nums.length;i++){
+//                 if(nums[i]==target){
+//                     // arr[0] = i;
+//                     // arr[1] = i+1;
+//                     ans.add(i);
+//                     ans.add(i);
+//                     break;
+//                 }
+//             }
+//         }
+
+//         else{
+//           for(int i=0;i<nums.length;i++){
+//             if(nums[i] == target){
+//                 // ans[index] = i;
+//                 // index++;
+//                 ans.add(i);
+//             }
+//           } 
+//         }
+
+//         int arr[] = new int[2];
+//         arr[0] = ans.get(0);
+//         arr[1] = ans.get(ans.size()-1);
+
+//         return arr;
+
+//     }
+// }
     }
 }
