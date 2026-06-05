@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class string {
     public static void main(String[] args) {
         // leetcode question 8
@@ -201,5 +206,52 @@ class Solution {
         }
     }
 }
+
+// leetcode question 49 -> group ansgrams 
+// class Solution {
+//     public List<List<String>> groupAnagrams(String[] strs) {
+
+        // wrong code 
+    //     int ascii = new int[strs.length];
+    //     for(int i=0;i<strs.length;i++){
+    //         int sum = 0;
+    //          for(int j=0;j<strs[i].length;i++){
+    //         sum = sum+ (int)strs[i].charAt(j) ;
+    //     }
+    //     ascii[i] = sum;
+    //     }
+
+    // List<List<String>> data = new ArrayList<>();
+    
+    // Map<String, List<String >>
+    // for(int i=0;i<ascii.length;i++){
+    // }
+
+
+    // correct code 
+//     Map<String,List>map = new HashMap<>();
+// for(String s:strs){
+//     int[] count = new int[26];
+//     for(char c:s.toCharArray()){
+//         count[c - 'a']++;
+//     }
+
+//     StringBuilder sb = new StringBuilder();
+//     for(int i:count){
+//         sb.append("#");
+//         sb.append(i);
+//     }
+//     String key = sb.toString();
+//     if(!map.containsKey(key)){
+//         map.put(key,new ArrayList<String>());
+//     }
+//     map.get(key).add(s);
+// }
+//     return new ArrayList(map.values());
+//     }
+// }
+
+
+
     }
 }
