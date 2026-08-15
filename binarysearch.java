@@ -71,17 +71,17 @@ class Solution {
 
 //     }
 
-    else if(nums[mid] < target ){
-        low = mid+1;
-    }
+//     else if(nums[mid] < target ){
+//         low = mid+1;
+//     }
 
-    else{
-        high = mid-1;
-    }
-}
-return ans ; 
-    }
-}
+//     else{
+//         high = mid-1;
+//     }
+// }
+// return ans ; 
+//     }
+// }
 
-    }
-}
+//     }
+// }
