@@ -3,11 +3,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class string {
-    public static void main(String[] args) {
+// public class string {
+//     public static void main(String[] args) {
         // leetcode question 8
-        class Solution {
-    public int myAtoi(String s) {
+    //     class Solution {
+    // public int myAtoi(String s) {
 
         // my approach which is wrong 
 //         StringBuilder sb = new StringBuilder(s.trim()) ;
