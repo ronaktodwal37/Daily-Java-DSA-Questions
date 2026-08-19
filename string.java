@@ -89,7 +89,7 @@ public class string {
 // }
 
 
-leetcode question 69
+// leetcode question 69
 class Solution {
     public int mySqrt(int x) {
         // int ans = 0;
@@ -105,7 +105,7 @@ class Solution {
 
 
         long low = 1 , high = x;
-        while(low<=high){
+        // while(low<=high){
             // long mid = (low+high)/2;
             // long val = (mid*mid);
 
@@ -115,10 +115,10 @@ class Solution {
             // else{
             //     high = mid-1;
             // }
-        }
+        // }
         return (int)high;
-    }
-}
+    // }
+// }
 
 
 // leetcode question 5 
