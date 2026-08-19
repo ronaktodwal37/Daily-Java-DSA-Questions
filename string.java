@@ -189,7 +189,7 @@ class Solution {
 
 // leetcode question 9
 class Solution {
-    public boolean isPalindrome(int x) {
+    // public boolean isPalindrome(int x) {
         // int duplicate = x;
         // int reverse = 0;
         // while(x>0){
@@ -204,7 +204,7 @@ class Solution {
         // else{
         //     return false;
         // }
-    }
+    // }
 }
 
 // leetcode question 49 -> group ansgrams 
