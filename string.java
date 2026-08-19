@@ -106,8 +106,8 @@ class Solution {
 
         long low = 1 , high = x;
         while(low<=high){
-            long mid = (low+high)/2;
-            long val = (mid*mid);
+            // long mid = (low+high)/2;
+            // long val = (mid*mid);
 
             // if(val<=x){
             //     low = mid+1;
