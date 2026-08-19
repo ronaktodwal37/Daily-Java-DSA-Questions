@@ -198,9 +198,9 @@ class Solution {
         //     x = x/10;
         // }
 
-        if(reverse == duplicate){
-            return true;
-        }
+        // if(reverse == duplicate){
+        //     return true;
+        // }
         // else{
         //     return false;
         // }
