@@ -90,8 +90,8 @@ public class string {
 
 
 // leetcode question 69
-class Solution {
-    public int mySqrt(int x) {
+// class Solution {
+//     public int mySqrt(int x) {
         // int ans = 0;
         // for(long i=0;i<=x;i++){
         //     if(i*i == x){
@@ -104,7 +104,7 @@ class Solution {
         // return ans ;
 
 
-        long low = 1 , high = x;
+        // long low = 1 , high = x;
         // while(low<=high){
             // long mid = (low+high)/2;
             // long val = (mid*mid);
@@ -116,7 +116,7 @@ class Solution {
             //     high = mid-1;
             // }
         // }
-        return (int)high;
+        // return (int)high;
     // }
 // }
 
