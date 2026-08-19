@@ -109,9 +109,9 @@ class Solution {
             long mid = (low+high)/2;
             long val = (mid*mid);
 
-            if(val<=x){
-                low = mid+1;
-            }
+            // if(val<=x){
+            //     low = mid+1;
+            // }
             // else{
             //     high = mid-1;
             // }
