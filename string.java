@@ -146,11 +146,11 @@ class Solution {
             for(int j = i; j < n; j++){
 
                 if(isPalindrome(s, i, j)){
-                    if(j - i + 1 > max){
-                        max = j - i + 1;
-                        start = i;
-                        end = j;
-                    }
+                    // if(j - i + 1 > max){
+                    //     max = j - i + 1;
+                    //     start = i;
+                    //     end = j;
+                    // }
                 }
             }
         }
