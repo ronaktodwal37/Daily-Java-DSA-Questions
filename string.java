@@ -112,9 +112,9 @@ class Solution {
             if(val<=x){
                 low = mid+1;
             }
-            else{
-                high = mid-1;
-            }
+            // else{
+            //     high = mid-1;
+            // }
         }
         return (int)high;
     }
