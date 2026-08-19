@@ -201,9 +201,9 @@ class Solution {
         if(reverse == duplicate){
             return true;
         }
-        else{
-            return false;
-        }
+        // else{
+        //     return false;
+        // }
     }
 }
 
