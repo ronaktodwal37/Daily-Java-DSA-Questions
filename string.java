@@ -188,7 +188,7 @@ class Solution {
 // }
 
 // leetcode question 9
-class Solution {
+// class Solution {
     // public boolean isPalindrome(int x) {
         // int duplicate = x;
         // int reverse = 0;
@@ -205,7 +205,7 @@ class Solution {
         //     return false;
         // }
     // }
-}
+// }
 
 // leetcode question 49 -> group ansgrams 
 // class Solution {
