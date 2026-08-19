@@ -139,7 +139,7 @@ class Solution {
 //         return true;
 //     }
 
-    public String longestPalindrome(String s) {
+    // public String longestPalindrome(String s) {
         // int n = s.length();
 
         // for(int i = 0; i < n; i++){
@@ -157,7 +157,7 @@ class Solution {
 
         // return s.substring(start, end + 1);
     // }
-}
+// }
 
 
 
