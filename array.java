@@ -569,35 +569,35 @@ class Solution {
 
 
 
-// import java.util.*;
+import java.util.*;
 
 
-// class Solution {
-//     public void nextPermutation(int[] nums) {
-// int n = nums.length;
+class Solution {
+    public void nextPermutation(int[] nums) {
+int n = nums.length;
 
-//         int pivotindex = -1;
-//     for(int i=nums.length-2;i>=0;i--){
-//         if(nums[i]<nums[i+1]){
-//             pivotindex  = i;
-//             break;
-//         }
-//     }
+        int pivotindex = -1;
+    for(int i=nums.length-2;i>=0;i--){
+        if(nums[i]<nums[i+1]){
+            pivotindex  = i;
+            break;
+        }
+    }
 
-//     if(pivotindex == -1){
-//         reverse(nums, 0, n - 1);
-//         return;
-//     }
+    if(pivotindex == -1){
+        reverse(nums, 0, n - 1);
+        return;
+    }
 
-//     int min = nums[pivotindex+1];
-//     for(int i = nums.length-1;i>=0;i--){
-//         if(nums[i] > nums[pivotindex]){
-//             int temp = nums[i];
-//             nums[i] = nums[pivotindex];
-//             nums[pivotindex] = temp;
-//             break;
-//         }
-//     }
+    int min = nums[pivotindex+1];
+    for(int i = nums.length-1;i>=0;i--){
+        if(nums[i] > nums[pivotindex]){
+            int temp = nums[i];
+            nums[i] = nums[pivotindex];
+            nums[pivotindex] = temp;
+            break;
+        }
+    }
 
 //     reverse(nums, pivotindex + 1, n - 1);
 //     }
