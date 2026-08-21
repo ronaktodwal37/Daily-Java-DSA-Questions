@@ -333,9 +333,9 @@ if(currentsum<0){
 
 
 
-int maxsum = Integer.MIN_VALUE;
-for(int i=0;i<nums.length;i++){
-int currentsum = nums[i];
+// int maxsum = Integer.MIN_VALUE;
+// for(int i=0;i<nums.length;i++){
+// int currentsum = nums[i];
 
 // for(int j=i+1;j<nums.length;j++){
 //     currentsum = currentsum + nums[j];
