@@ -71,8 +71,8 @@ class Solution {
 // 1 <= n <= 300
 // nums[i] is either 0, 1, or 2.
 
-class Solution {
-    public void sortColors(int[] nums) {
+// class Solution {
+//     public void sortColors(int[] nums) {
     //    for(int i=0;i<nums.length-1;i++){
     //     for(int j=0;j<nums.length-i-1;j++){
     //         if(nums[j]>nums[j+1]){
@@ -84,8 +84,8 @@ class Solution {
     //    }
 
 
-    }
-}
+//     }
+// }
 
 
 
