@@ -423,21 +423,21 @@ class Solution {
         }
         int maxLength = 0;
 
-        for(int num: set){
-            if(!set.contains(num-1)){
-                int currentNum = num;
-                int count = 1;
+//         for(int num: set){
+//             if(!set.contains(num-1)){
+//                 int currentNum = num;
+//                 int count = 1;
 
-                while(set.contains(currentNum+1)){
-                    currentNum++;
-                    count++;
-                }
-                maxLength = Math.max(maxLength,count);
-            }
-        }
-        return maxLength;
-    }
-}
+//                 while(set.contains(currentNum+1)){
+//                     currentNum++;
+//                     count++;
+//                 }
+//                 maxLength = Math.max(maxLength,count);
+//             }
+//         }
+//         return maxLength;
+//     }
+// }
 
 
 // 238. Product of Array Except Self
