@@ -417,11 +417,11 @@ class Solution {
 
 
     // optimal approach
-        Set<Integer> set = new HashSet<>();
-        for(int num:nums){
-            set.add(num);
-        }
-        int maxLength = 0;
+        // Set<Integer> set = new HashSet<>();
+        // for(int num:nums){
+        //     set.add(num);
+        // }
+        // int maxLength = 0;
 
 //         for(int num: set){
 //             if(!set.contains(num-1)){
