@@ -468,21 +468,21 @@ class Solution {
 // The input is generated such that answer[i] is guaranteed to fit in a 32-bit integer.
 
 
-class Solution {
-    public int[] productExceptSelf(int[] nums) {
-        int[] answer = new int[nums.length];
-        for(int i=0;i<nums.length;i++){
-          answer[i] = 1;
-            int j=0;
-            while(j<nums.length ){
-                if(i!=j){
-                answer[i] = answer[i]*nums[j];
-                }
-                j++;
-            }
+// class Solution {
+//     public int[] productExceptSelf(int[] nums) {
+//         int[] answer = new int[nums.length];
+//         for(int i=0;i<nums.length;i++){
+//           answer[i] = 1;
+//             int j=0;
+//             while(j<nums.length ){
+//                 if(i!=j){
+//                 answer[i] = answer[i]*nums[j];
+//                 }
+//                 j++;
+//             }
             
-        }
-        return answer;
+//         }
+//         return answer;
 
         // int n = nums.length;
         // int[] prefix = new int[nums.length];
