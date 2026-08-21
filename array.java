@@ -527,8 +527,8 @@ class Solution {
         return answer;
 
 
-//     }
-// }
+    }
+}
 
 
 // 31. Next Permutation
