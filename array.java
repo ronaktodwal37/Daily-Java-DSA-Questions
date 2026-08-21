@@ -403,17 +403,17 @@ class Solution {
         for(int i=1;i<nums.length;i++){
             if(nums[i]==nums[i-1]){
             }
-            else if(nums[i] == nums[i-1]+1 ){
-                count++;
-                if(count>maxcount){
-                    maxcount = count;
-                }
-            }
-            else{
-                count = 1;
-            }
-        }
-        return maxcount;
+        //     else if(nums[i] == nums[i-1]+1 ){
+        //         count++;
+        //         if(count>maxcount){
+        //             maxcount = count;
+        //         }
+        //     }
+        //     else{
+        //         count = 1;
+        //     }
+        // }
+        // return maxcount;
 
 
     // optimal approach
