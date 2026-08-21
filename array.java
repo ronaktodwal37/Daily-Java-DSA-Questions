@@ -584,14 +584,14 @@ int n = nums.length;
         }
     }
 
-    if(pivotindex == -1){
-        reverse(nums, 0, n - 1);
-        return;
-    }
+    // if(pivotindex == -1){
+    //     reverse(nums, 0, n - 1);
+    //     return;
+    // }
 
-    int min = nums[pivotindex+1];
-    for(int i = nums.length-1;i>=0;i--){
-        if(nums[i] > nums[pivotindex]){
+    // int min = nums[pivotindex+1];
+    // for(int i = nums.length-1;i>=0;i--){
+    //     if(nums[i] > nums[pivotindex]){
     //         int temp = nums[i];
     //         nums[i] = nums[pivotindex];
     //         nums[pivotindex] = temp;
