@@ -599,12 +599,12 @@ int n = nums.length;
         }
     }
 
-//     reverse(nums, pivotindex + 1, n - 1);
-//     }
-//     private void reverse(int[] nums, int start, int end){
-//     while(start < end){
-//         int t = nums[start];
-//         nums[start] = nums[end];
+    reverse(nums, pivotindex + 1, n - 1);
+    }
+    private void reverse(int[] nums, int start, int end){
+    while(start < end){
+        int t = nums[start];
+        nums[start] = nums[end];
 //         nums[end] = t;
 //         start++;
 //         end--;
