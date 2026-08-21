@@ -198,13 +198,13 @@ class Solution {
     //     for(int j=i+1;j<prices.length;j++){
     //         int currentprofit = prices[j]-prices[i];
     //         if(currentprofit>maxprofit){
-                maxprofit = currentprofit ;
-            }
-        }
-    }
-       return maxprofit;
-    }
-}
+//                 maxprofit = currentprofit ;
+//             }
+//         }
+//     }
+//        return maxprofit;
+//     }
+// }
 
 
 // 283. Move Zeroes
