@@ -138,14 +138,14 @@ for(int i=0;i<nums.length;i++){
     }
 }
 
- for(Map.Entry<Integer,Integer> e: map.entrySet()) {
-    if(e.getValue() > 1){
-        ans = e.getKey();
-    }
-        }
-        return ans;
-    }
-}
+//  for(Map.Entry<Integer,Integer> e: map.entrySet()) {
+//     if(e.getValue() > 1){
+//         ans = e.getKey();
+//     }
+//         }
+//         return ans;
+//     }
+// }
 
 
 // 121. Best Time to Buy and Sell Stock
