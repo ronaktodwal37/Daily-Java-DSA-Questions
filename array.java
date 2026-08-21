@@ -247,17 +247,17 @@ class Solution {
                 }
             }
         }
-        for(int i=nonzero;i<nums.length;i++){
-            nums[i] = 0;
-        }
+        // for(int i=nonzero;i<nums.length;i++){
+        //     nums[i] = 0;
+        // }
 
-        int nonzero = 0;
-        int count = 0;
-        for(int i=0;i<nums.length;i++){
-            if(nums[i] != 0){
-                nonzero++;
-            }
-        }
+        // int nonzero = 0;
+        // int count = 0;
+        // for(int i=0;i<nums.length;i++){
+        //     if(nums[i] != 0){
+        //         nonzero++;
+        //     }
+        // }
 
 //         for(int i=0;i<nums.length;i++){
 //             if(nums[i]!=0){
