@@ -605,9 +605,9 @@ int n = nums.length;
     while(start < end){
         int t = nums[start];
         nums[start] = nums[end];
-//         nums[end] = t;
-//         start++;
-//         end--;
-//     }
-//     }
-// }
+        nums[end] = t;
+        start++;
+        end--;
+    }
+    }
+}
