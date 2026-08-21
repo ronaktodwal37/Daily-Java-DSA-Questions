@@ -592,15 +592,15 @@ int n = nums.length;
     int min = nums[pivotindex+1];
     for(int i = nums.length-1;i>=0;i--){
         if(nums[i] > nums[pivotindex]){
-            int temp = nums[i];
-            nums[i] = nums[pivotindex];
-            nums[pivotindex] = temp;
-            break;
-        }
-    }
+    //         int temp = nums[i];
+    //         nums[i] = nums[pivotindex];
+    //         nums[pivotindex] = temp;
+    //         break;
+    //     }
+    // }
 
-    reverse(nums, pivotindex + 1, n - 1);
-    }
+    // reverse(nums, pivotindex + 1, n - 1);
+    // }
 //     private void reverse(int[] nums, int start, int end){
 //     while(start < end){
 //         int t = nums[start];
