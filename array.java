@@ -337,21 +337,21 @@ int maxsum = Integer.MIN_VALUE;
 for(int i=0;i<nums.length;i++){
 int currentsum = nums[i];
 
-for(int j=i+1;j<nums.length;j++){
-    currentsum = currentsum + nums[j];
-    if(currentsum<0){
-        currentsum = 0;
-    }
-    else{
-        if(currentsum>maxsum){
-            maxsum = currentsum;
-        }
-    }
-}
-}
-return maxsum;
-    }
-}
+// for(int j=i+1;j<nums.length;j++){
+//     currentsum = currentsum + nums[j];
+//     if(currentsum<0){
+//         currentsum = 0;
+//     }
+//     else{
+//         if(currentsum>maxsum){
+//             maxsum = currentsum;
+//         }
+//     }
+// }
+// }
+// return maxsum;
+//     }
+// }
 
 
 // 128. Longest Consecutive Sequence
