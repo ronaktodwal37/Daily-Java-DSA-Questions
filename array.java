@@ -572,17 +572,17 @@ class Solution {
 import java.util.*;
 
 
-class Solution {
-    public void nextPermutation(int[] nums) {
-int n = nums.length;
+// class Solution {
+//     public void nextPermutation(int[] nums) {
+// int n = nums.length;
 
-        int pivotindex = -1;
-    for(int i=nums.length-2;i>=0;i--){
-        if(nums[i]<nums[i+1]){
-            pivotindex  = i;
-            break;
-        }
-    }
+//         int pivotindex = -1;
+//     for(int i=nums.length-2;i>=0;i--){
+//         if(nums[i]<nums[i+1]){
+//             pivotindex  = i;
+//             break;
+//         }
+//     }
 
     // if(pivotindex == -1){
     //     reverse(nums, 0, n - 1);
