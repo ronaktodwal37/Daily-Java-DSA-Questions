@@ -121,31 +121,31 @@ class Solution {
 // All the integers in nums appear only once except for precisely one integer which appears two or more times.
  
 
-// import java.util.*;
-// class Solution {
-//     public int findDuplicate(int[] nums) {
+import java.util.*;
+class Solution {
+    public int findDuplicate(int[] nums) {
 
 
-// int count =0;
-// int ans=0;
-// HashMap<Integer,Integer> map = new HashMap<>();
-// for(int i=0;i<nums.length;i++){
-//     if(map.containsKey(nums[i])){
-//          map.put(nums[i],map.get(nums[i])+1); 
-//     }
-//     else{
-//           map.put(nums[i],1);
-//     }
-// }
+int count =0;
+int ans=0;
+HashMap<Integer,Integer> map = new HashMap<>();
+for(int i=0;i<nums.length;i++){
+    if(map.containsKey(nums[i])){
+         map.put(nums[i],map.get(nums[i])+1); 
+    }
+    else{
+          map.put(nums[i],1);
+    }
+}
 
-//  for(Map.Entry<Integer,Integer> e: map.entrySet()) {
-//     if(e.getValue() > 1){
-//         ans = e.getKey();
-//     }
-//         }
-//         return ans;
-//     }
-// }
+ for(Map.Entry<Integer,Integer> e: map.entrySet()) {
+    if(e.getValue() > 1){
+        ans = e.getKey();
+    }
+        }
+        return ans;
+    }
+}
 
 
 // 121. Best Time to Buy and Sell Stock
