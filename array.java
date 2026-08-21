@@ -194,17 +194,17 @@ class Solution {
 
 
     //    2nd approach (but time limit exceed)
-    // for(int i=0;i<prices.length;i++){
-    //     for(int j=i+1;j<prices.length;j++){
-    //         int currentprofit = prices[j]-prices[i];
-    //         if(currentprofit>maxprofit){
-    //             maxprofit = currentprofit ;
-    //         }
-    //     }
-    // }
-//        return maxprofit;
-//     }
-// }
+    for(int i=0;i<prices.length;i++){
+        for(int j=i+1;j<prices.length;j++){
+            int currentprofit = prices[j]-prices[i];
+            if(currentprofit>maxprofit){
+                maxprofit = currentprofit ;
+            }
+        }
+    }
+       return maxprofit;
+    }
+}
 
 
 // 283. Move Zeroes
