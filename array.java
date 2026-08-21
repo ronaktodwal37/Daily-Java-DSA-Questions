@@ -499,15 +499,15 @@ class Solution {
             suffix[i] = suffix[i+1]*nums[i+1];
         }
 
-        // for(int i=0;i<n;i++){
-        //     answer[i] = prefix[i]*suffix[i];
-        // }
+        for(int i=0;i<n;i++){
+            answer[i] = prefix[i]*suffix[i];
+        }
 
-        // return answer;
+        return answer;
 
-        // int n = nums.length;
-        // int prefix[] = new int [nums.length];
-        // int suffix[] = new int [nums.length];
+        int n = nums.length;
+        int prefix[] = new int [nums.length];
+        int suffix[] = new int [nums.length];
 
 
         // for prefix 
