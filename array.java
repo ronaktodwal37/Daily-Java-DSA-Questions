@@ -230,46 +230,46 @@ class Solution {
 // 1 <= nums.length <= 104
 // -231 <= nums[i] <= 231 - 1
 
-// class Solution {
-//     public void moveZeroes(int[] nums) {
-        // int nonzero = 0;
-        // for(int i=0;i<nums.length;i++){
-        //     if(nums[i] != 0){
-        //         nonzero++;
-        //     }
-        // }
-        // int index = 0;
-        // for(int i=0;i<nums.length;i++){
-        //     if(index<nonzero){
-        //         if(nums[i] != 0){
-        //             nums[index] = nums[i];
-        //             index++;
-        //         }
-        //     }
-        // }
-        // for(int i=nonzero;i<nums.length;i++){
-        //     nums[i] = 0;
-        // }
+class Solution {
+    public void moveZeroes(int[] nums) {
+        int nonzero = 0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i] != 0){
+                nonzero++;
+            }
+        }
+        int index = 0;
+        for(int i=0;i<nums.length;i++){
+            if(index<nonzero){
+                if(nums[i] != 0){
+                    nums[index] = nums[i];
+                    index++;
+                }
+            }
+        }
+        for(int i=nonzero;i<nums.length;i++){
+            nums[i] = 0;
+        }
 
-//         int nonzero = 0;
-//         int count = 0;
-//         for(int i=0;i<nums.length;i++){
-//             if(nums[i] != 0){
-//                 nonzero++;
-//             }
-//         }
+        int nonzero = 0;
+        int count = 0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i] != 0){
+                nonzero++;
+            }
+        }
 
-//         for(int i=0;i<nums.length;i++){
-//             if(nums[i]!=0){
-// nums[count] =nums[i];
-// count++;
-//             }
-//         }
-//         for(int i=count;i<nums.length;i++){
-//             nums[i] = 0;
-//         }
-//     }
-// }
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]!=0){
+nums[count] =nums[i];
+count++;
+            }
+        }
+        for(int i=count;i<nums.length;i++){
+            nums[i] = 0;
+        }
+    }
+}
 
 
 
