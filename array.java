@@ -304,32 +304,32 @@ count++;
 // Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
 
 
-// class Solution {
-//     public int maxSubArray(int[] nums) {
-//    int maxsum = Integer.MIN_VALUE;
-//    for(int i=0;i<nums.length;i++){
-//    int currentsum = 0;
-//     for(int j=i;j<nums.length;j++){
-//          for(int k = i; k<=j;k++){
-//             currentsum = currentsum + nums[k];
-//          }
-//       if(currentsum>maxsum){
-//         maxsum = currentsum;
-//       }
-//       }
-//      }
-// int currentsum = 0;
-// for(int i =0;i<nums.length;i++){
-// currentsum = currentsum + nums[i];
+class Solution {
+    public int maxSubArray(int[] nums) {
+   int maxsum = Integer.MIN_VALUE;
+   for(int i=0;i<nums.length;i++){
+   int currentsum = 0;
+    for(int j=i;j<nums.length;j++){
+         for(int k = i; k<=j;k++){
+            currentsum = currentsum + nums[k];
+         }
+      if(currentsum>maxsum){
+        maxsum = currentsum;
+      }
+      }
+     }
+int currentsum = 0;
+for(int i =0;i<nums.length;i++){
+currentsum = currentsum + nums[i];
 
-// if(currentsum>maxsum){
-//     maxsum = currentsum;
-// }
-// if(currentsum<0){
-//     currentsum = 0;
-// }
-// }
-//      return maxsum;
+if(currentsum>maxsum){
+    maxsum = currentsum;
+}
+if(currentsum<0){
+    currentsum = 0;
+}
+}
+     return maxsum;
 
 
 
