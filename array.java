@@ -383,37 +383,37 @@ return maxsum;
 // -109 <= nums[i] <= 109
 
 
-// import java.util.*;
-// class Solution {
-//     public int longestConsecutive(int[] nums) {
-        // if(nums.length==0){
-        //     return 0;
-        // }
-        // for(int i=0;i<nums.length-1;i++){
-        //  for(int j=0;j<nums.length-i-1;j++){
-        //     if(nums[j]>nums[j+1]){
-        //         int temp = nums[j];
-        //         nums[j] = nums[j+1];
-        //         nums[j+1] = temp;
-        //     }
-        //  }
-        // }
-        // int maxcount = 1;
-        // int count = 1 ;
-        // for(int i=1;i<nums.length;i++){
-        //     if(nums[i]==nums[i-1]){
-        //     }
-        //     else if(nums[i] == nums[i-1]+1 ){
-        //         count++;
-        //         if(count>maxcount){
-        //             maxcount = count;
-        //         }
-        //     }
-        //     else{
-        //         count = 1;
-        //     }
-        // }
-        // return maxcount;
+import java.util.*;
+class Solution {
+    public int longestConsecutive(int[] nums) {
+        if(nums.length==0){
+            return 0;
+        }
+        for(int i=0;i<nums.length-1;i++){
+         for(int j=0;j<nums.length-i-1;j++){
+            if(nums[j]>nums[j+1]){
+                int temp = nums[j];
+                nums[j] = nums[j+1];
+                nums[j+1] = temp;
+            }
+         }
+        }
+        int maxcount = 1;
+        int count = 1 ;
+        for(int i=1;i<nums.length;i++){
+            if(nums[i]==nums[i-1]){
+            }
+            else if(nums[i] == nums[i-1]+1 ){
+                count++;
+                if(count>maxcount){
+                    maxcount = count;
+                }
+            }
+            else{
+                count = 1;
+            }
+        }
+        return maxcount;
 
 
     // optimal approach
