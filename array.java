@@ -484,9 +484,9 @@ class Solution {
         }
         return answer;
 
-        int n = nums.length;
-        int[] prefix = new int[nums.length];
-        int[] suffix = new int[nums.length];
+        // int n = nums.length;
+        // int[] prefix = new int[nums.length];
+        // int[] suffix = new int[nums.length];
 
         // prefix 
         // prefix[0] = 1;
