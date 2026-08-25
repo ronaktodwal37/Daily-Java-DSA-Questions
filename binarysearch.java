@@ -12,11 +12,11 @@ public class binarysearch {
             if(nums[mid]==target){
                 ans = mid;
                 break;
-//             }
-//             if(nums[low]<=nums[mid]){
-//                 if(nums[low]<=target && nums[mid]>=target){
-//                     high = mid-1;
-//                 }
+            }
+            if(nums[low]<=nums[mid]){
+                if(nums[low]<=target && nums[mid]>=target){
+                    high = mid-1;
+                }
 //                 else{
 //                     low = mid+1;
 //                 }
