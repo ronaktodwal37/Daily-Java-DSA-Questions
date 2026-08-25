@@ -28,12 +28,12 @@ public class binarysearch {
                 else{
                     high = mid-1;
                 }
-            }
+//             }
 
-        }
-        return ans;
-    }
-}
+//         }
+//         return ans;
+//     }
+// }
 
 
 
