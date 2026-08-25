@@ -22,12 +22,12 @@ public class binarysearch {
                 }
             }
             else{
-                if(nums[mid] <= target && nums[high]>=target){
-                    low = mid+1;
-                }
-                else{
-                    high = mid-1;
-                }
+                // if(nums[mid] <= target && nums[high]>=target){
+                //     low = mid+1;
+                // }
+                // else{
+                //     high = mid-1;
+                // }
 //             }
 
 //         }
