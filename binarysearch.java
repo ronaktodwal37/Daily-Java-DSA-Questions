@@ -7,12 +7,12 @@ public class binarysearch {
         int low = 0;
         int high = nums.length-1;
 
-        while(low<=high){
-            int mid = low + (high-low)/2 ;
-            if(nums[mid]==target){
-                ans = mid;
-                break;
-            }
+        // while(low<=high){
+        //     int mid = low + (high-low)/2 ;
+        //     if(nums[mid]==target){
+        //         ans = mid;
+        //         break;
+        //     }
         //     if(nums[low]<=nums[mid]){
         //         if(nums[low]<=target && nums[mid]>=target){
         //             high = mid-1;
