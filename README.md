@@ -4,7 +4,7 @@ Absolutely. Below is a **complete DSA roadmap in English**, designed for someone
 
 The most important thing is **sequence**. Don't study topics randomly.
 
-A good order is:
+A good overall order is:
 
 **Programming Fundamentals → Complexity → Arrays → Strings → Searching → Sorting → Hashing → Recursion → Backtracking → Linked List → Stack → Queue → Trees → BST → Heap → Greedy → Graphs → Dynamic Programming → Tries → Advanced DSA**
 
