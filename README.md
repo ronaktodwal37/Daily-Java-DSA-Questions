@@ -1,4 +1,4 @@
-Absolutely. Below is a **complete DSA roadmap in English**, designed for someone who is starting from zero and wants to reach a level suitable for **coding interviews, placements, LeetCode, and competitive programming**.
+Absolutely. Below is a **complete DSA roadmap in English**, designed for someone who is starting from zero and wants to reach a level suitable for **coding interviews, placements, , and competitive programming**.
 
 # Complete DSA Roadmap: Beginner → Advanced
 
