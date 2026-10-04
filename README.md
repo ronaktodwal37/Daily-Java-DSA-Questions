@@ -10,7 +10,7 @@ A good overall order is:
 
 ---
 
-# 0. First: Understand What DSA Actually Is
+# 0. First: Understand  DSA Actually Is
 
 Before starting, understand the two components:
 
