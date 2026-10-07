@@ -20,7 +20,7 @@ A data structure is a way to **store and organize data**.
 
 Examples:
 
-* 
+* Arrays
 * String
 * Linked List
 * Stack
