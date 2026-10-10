@@ -23,7 +23,7 @@ Examples:
 * Arrays
 * String
 * Linked List
-* Stack
+* 
 * Queue
 * HashMap
 * Tree
