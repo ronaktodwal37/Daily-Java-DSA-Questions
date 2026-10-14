@@ -2,7 +2,7 @@ Absolutely. Below is a **complete DSA roadmap in English**, designed for someone
 
 # Complete DSA Roadmap: Beginner → Advanced
 
-The most important thing is **sequence**. Don't study  randomly.
+The most important thing is **sequence**. Don't study topics randomly.
 
 A good overall order is:
 
