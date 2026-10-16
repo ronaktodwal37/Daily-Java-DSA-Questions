@@ -37,7 +37,7 @@ An algorithm is a **step-by-step procedure to solve a problem**.
 
 Examples:
 
-* Binary Search
+* Binary 
 * Merge Sort
 * DFS
 * BFS
