@@ -89,7 +89,7 @@ Understand:
 ### 3. Operators
 
 * Arithmetic
-* Relational
+* 
 * Logical
 * Assignment
 * Increment/decrement
