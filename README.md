@@ -33,7 +33,7 @@ Examples:
 
 ### Algorithms
 
-An algo is a **step-by-step procedure to solve a problem**.
+An algorithm is a **step-by-step procedure to solve a problem**.
 
 Examples:
 
